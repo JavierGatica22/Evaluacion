@@ -1,0 +1,33 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" routerLink="/home">
+      <ion-button color="light">
+        <ion-icon slot="icon-only" name="arrow-back" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content class="background">
+
+  <h1>Crear cuenta de usuario</h1>
+  <ion-input   [(ngModel)]= "usuario.NombreUsuario" placeholder="Nombre Usuario:"  ></ion-input>
+  <br>
+  <ion-input [(ngModel)]= "usuario.correo" placeholder="Correo:" ></ion-input>
+  <br>
+  <ion-input type="password" [(ngModel)]= "usuario.contrasena" placeholder="Contraseña:"></ion-input>
+  <br>
+  <ion-input  [(ngModel)]= "usuario.direccion" placeholder="Direccion:"></ion-input>
+  <br>
+  <ion-input  [(ngModel)]= "usuario.codigoPostal" placeholder="Codigo Postal:"></ion-input>
+  <br>
+  <ion-button expand="block" shape="round"  (click)="enviarUsuario()" style="text-transform: initial; font-size: 16px;"> Crear cuenta</ion-button>
+
+<p> Presione en "crear cuenta" para finalizar.</p>
+<div>
+<h1 >Si eres farmaceutico</h1>
+<ion-button style="display: block; margin: -80 auto;" routerLink="/register-farmacia" fill="clear"> 
+            <p style="color: rgb(0, 110, 255); text-transform: initial; font-size: 15px;" > Haz click aqui para crear tu cuenta</p></ion-button>
+</div> 
+</ion-content>

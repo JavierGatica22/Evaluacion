@@ -1,0 +1,33 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<section style="background-color: #3e8dd8;">
+          <center><img src="assets/icon/person.png" class="img">
+            <ion-chip outline color="primary" style="background-color:white;">
+            <ion-icon name="sync-circle"></ion-icon>
+            <ion-label>Cambiar Imagen</ion-label>
+          </ion-chip></center>
+            <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Nombre:{{Nombre}}</h2>
+            <p style="margin-top:-20px;" >Correo:{{correo}}</p>
+            
+          
+         
+</section>
+  <ion-card style="font-size: 25px;">
+       <h1> Dirección </h1>
+       <p style="margin-top: -15px;">{{direccion}}</p>
+  </ion-card>
+
+  <ion-card style="font-size: 25px;">
+       <h1> codigoPostal </h1>
+       <p style="margin-top: -20px;">{{codigoPostal}} </p>
+  </ion-card>
+
+</ion-content>

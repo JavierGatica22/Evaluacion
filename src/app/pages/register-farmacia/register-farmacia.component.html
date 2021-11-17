@@ -1,0 +1,33 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/login" color="light">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <h1>Registro de Farmacias</h1>
+<div id="header" >
+  
+  <img src="assets/icon/logo1.png" >
+</div>
+
+<br>
+<br>
+<br>
+  <ion-input [(ngModel)]= "farmacia.run" placeholder="R.U.N:"></ion-input>
+  <br>
+  <ion-input [(ngModel)]= "farmacia.NombreUsuario" placeholder="Nombre usuario:"></ion-input>
+  <br>
+  <ion-input type="password" [(ngModel)]= "farmacia.contrasena" placeholder="Contraseña:"></ion-input>
+  <br>
+  <ion-input [(ngModel)]= "farmacia.NumFolio" placeholder="Nro folio:"></ion-input>
+  <br>
+  <ion-button  expand="block" shape="round" (click)="enviarFarmacia()" style="text-transform: initial;">Registrar</ion-button>
+
+ 
+</ion-content>
